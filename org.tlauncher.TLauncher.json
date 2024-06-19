@@ -32,7 +32,7 @@
 			"name": "tlauncher",
 			"buildsystem": "simple",
 			"build-commands": [
-				"install -Dm644 tlauncher.jar -t /app/tlauncher",
+				"install -Dm644 TLauncher.jar -t /app/tlauncher",
 				"install -Dm755 tlauncher -t /app/bin",
 				"install -Dm644 org.tlauncher.TLauncher.png -t /app/share/icons/hicolor/128x128/apps",
 				"install -Dm644 org.tlauncher.TLauncher.desktop -t /app/share/applications",
@@ -41,7 +41,8 @@
 			"sources": [
 				{
 					"type": "file",
-					"path": "tlauncher.jar"
+					"url": "https://github.com/DUB1401/TLauncher-Flatpak/releases/download/v2.923/TLauncher.jar",
+					"sha256": "a818894a2b092c658fabe4a5f929b5a1f1906c7522feee8b796cad706123297c"
 				},
 				{
 					"type": "file",
