@@ -1,0 +1,65 @@
+{
+	"app-id": "org.tlauncher.TLauncher",
+	"runtime": "org.freedesktop.Platform",
+	"runtime-version": "23.08",
+	"sdk": "org.freedesktop.Sdk",
+	"sdk-extensions": [
+		"org.freedesktop.Sdk.Extension.openjdk21"
+	],
+	"command": "tlauncher",
+	"finish-args": [
+		"--persist=.tlauncher",
+		"--persist=.minecraft",
+		"--socket=x11",
+		"--socket=wayland",
+		"--share=ipc",
+		"--device=dri",
+		"--socket=pulseaudio",
+		"--share=network",
+		"--env=PATH=/usr/bin:/app/bin:/app/jre/bin",
+		"--env=JAVA_HOME=/app/jre",
+		"--env=JAVA=/app/jre/bin/java"
+	],
+	"modules": [
+		{
+			"name": "openjdk",
+			"buildsystem": "simple",
+			"build-commands": [
+				"/usr/lib/sdk/openjdk11/install.sh"
+			]
+		},
+		{
+			"name": "tlauncher",
+			"buildsystem": "simple",
+			"build-commands": [
+				"install -Dm644 tlauncher.jar -t /app/tlauncher",
+				"install -Dm755 tlauncher -t /app/bin",
+				"install -Dm644 org.tlauncher.TLauncher.png -t /app/share/icons/hicolor/128x128/apps",
+				"install -Dm644 org.tlauncher.TLauncher.desktop -t /app/share/applications",
+				"install -Dm644 org.tlauncher.TLauncher.metainfo.xml -t /app/share/metainfo"
+			],
+			"sources": [
+				{
+					"type": "file",
+					"path": "tlauncher.jar"
+				},
+				{
+					"type": "file",
+					"path": "tlauncher"
+				},
+				{
+					"type": "file",
+					"path": "org.tlauncher.TLauncher.png"
+				},
+				{
+					"type": "file",
+					"path": "org.tlauncher.TLauncher.desktop"
+				},
+				{
+					"type": "file",
+					"path": "org.tlauncher.TLauncher.metainfo.xml"
+				}
+			]
+		}
+	]
+}

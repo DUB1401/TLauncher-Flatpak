@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.tlauncher.TLauncher</id>
+  <name>TLauncher</name>
+  <summary>Alternative launcher for Minecraft</summary>
+  <summary xml:lang="ru">Альтернативный лаунчер Minecraft</summary>
+  <developer_name>TLauncher Inc.</developer_name>
+
+  <description>
+    <p>There are not so many good Minecraft launchers nowadays, and yet they exist – TLauncher being one of them.</p>
+  </description>
+    <description xml:lang="ru">
+    <p>Сегодня не так много хороших лаунчеров для игры Minecraft, но они всё-таки есть, и один из них TLauncher.</p>
+  </description>
+
+  <project_license>Unlicense</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+
+  <url type="homepage">https://tlauncher.org/en/</url>
+  <url type="bugtracker">https://tlauncher.org/en/send-bug-tlauncher.html</url>
+  <url type="donation">https://tlauncher.org/en/premium.html</url>
+  <url type="help">https://tlauncher.org/en/help.html</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/org.tlauncher.TLauncher/master/screenshots/launcher.png</image>
+      <caption>Launcher main menu</caption>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">moderate</content_attribute>
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="violence-bloodshed">mild</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+
+  <releases>
+   <release date="2024-05-03" version="2.923">
+      <description>
+	   <ul>
+          <li>NeoForge was added to the TLMods mod pack system.</li>
+        </ul>
+      </description>
+	  <description xml:lang="ru">
+	   <ul>
+          <li>Добавлен NeoForge в TLMods мод-пак систему.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2020-07-12" version="2.72">
+      <description>
+        <ul>
+          <li>Fixed a problem with achievements;</li>
+          <li>Fixed SSL problem when launching the TLauncher;</li>
+          <li>Fixed a crash game related to memory;</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2020-07-02" version="2.71">
+      <description>
+        <ul>
+          <li>Updated some icons in the mod-pack system.</li>
+          <li>Some library repositories have been replaced with new ones.</li>
+          <li>Fixed null error when connecting to server.</li>
+          <li>Improvements and fixes for the stability of the program.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2020-02-27" version="2.69">
+      <description>
+        <ul>
+          <li>Added the Shaders tab to the Mod-pack system. Improving the appearance of the game has become much easier!</li>
+          <li>Improvements and fixes for the stability of the program.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+
+  <launchable type="desktop-id">org.tlauncher.TLauncher.desktop</launchable>
+  <update_contact>https://github.com/DUB1401</update_contact>
+</component>

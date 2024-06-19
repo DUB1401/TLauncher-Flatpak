@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=TLauncher
+Icon=org.tlauncher.TLauncher
+Exec=tlauncher
+Categories=Game;
