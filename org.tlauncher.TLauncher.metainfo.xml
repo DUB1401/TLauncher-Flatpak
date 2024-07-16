@@ -38,6 +38,18 @@
   </content_rating>
 
   <releases>
+  <release date="2024-07-15" version="2.924">
+      <description>
+	   <ul>
+          <li>Fixed a bug with mods.</li>
+        </ul>
+      </description>
+	  <description xml:lang="ru">
+	   <ul>
+          <li>Исправлена ошибка с модами.</li>
+        </ul>
+      </description>
+    </release>
    <release date="2024-05-03" version="2.923">
       <description>
 	   <ul>

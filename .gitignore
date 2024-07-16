@@ -1,3 +1,5 @@
 # Flatpak builder files.
+TLauncher.flatpak
 .flatpak-builder
-build-dir
+export
+build
